@@ -1,0 +1,244 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Recruitment task - css</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <style>
+        /*
+       * Layout should looks like this: https://user-images.githubusercontent.com/10219857/83452890-d02ee400-a459-11ea-86e3-0335af0fe2f1.png.
+       *
+       * Good luck! 🤞🏻
+      */
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial';
+            position: relative;
+            font-size: 14px;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background: hsl(0, 0%, 98%);
+            border-bottom: 1px solid hsl(0, 0%, 95%);
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .blog-header {
+            display: flex;
+            margin: 30px 0 30px 0;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+        }
+        
+        .blog-header__tags {
+            -webkit-order: 0;
+            -ms-flex-order: 0;
+            order: 0;
+            -webkit-flex: 1 0 auto;
+            -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+            -webkit-align-self: auto;
+            -ms-flex-item-align: auto;
+            align-self: auto;
+        }
+        
+        .blog-header__filter {
+            -webkit-order: 0;
+            -ms-flex-order: 0;
+            order: 0;
+            -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            -webkit-align-self: auto;
+            -ms-flex-item-align: auto;
+            align-self: auto;
+        }
+        
+        .blog-header__tags span,
+        .blog-header__filter span {
+            background: hsl(0, 0%, 90%);
+            padding: 5px 15px;
+            margin: 10px 10px 30px 0;
+            border-radius: 5px;
+        }
+        
+        .blog-list {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-align-content: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+        }
+        
+        .blog-list__single {
+            border: 1px solid hsl( 0, 0%, 90%);
+            border-radius: 10px;
+            width: 30%;
+            /* float: left; */
+            display: inline-block;
+            text-align: center;
+            -webkit-order: 0;
+            -ms-flex-order: 0;
+            order: 0;
+            -webkit-flex: 0 0 33%;
+            -ms-flex: 0 0 33%;
+            flex: 0 0 33%;
+            -webkit-align-self: auto;
+            -ms-flex-item-align: auto;
+            align-self: auto;
+            max-width: 30%;
+            padding: 20px 0 10px 0;
+            margin: 20px 30px 10px 0;
+            min-height: 350px;
+        }
+        
+        .blog-list__readmore {
+            border: 2px solid hsl(204, 87%, 57%);
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        
+        .blog-list__content {
+            text-align: left;
+            margin-left: 30px;
+        }
+    </style>
+
+    <header>
+        <img src='https://ckeditor.com/docs/assets/img/ckeditor-5.svg'>
+        <h3>Some kind of title</h3>
+    </header>
+
+    <main>
+        <div class='blog-header'>
+            <div class='blog-header__tags'>
+                <span>Tag 1</span>
+                <span>Tag 2</span>
+                <span>Tag 3</span>
+                <span>Tag 4</span>
+            </div>
+            <div class='blog-header__filter'>
+                <span>Filter</span>
+            </div>
+        </div>
+
+        <div class='blog-list'>
+            <div class='blog-list__single'>
+                <div class='blog-list__image'>
+                    <img src='https://placehold.it/300x150'>
+                </div>
+
+                <div class='blog-list__content'>
+                    <h3>Title 1</h3>
+                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+                    <a class='blog-list__readmore' href='#'>Read more</a>
+                </div>
+            </div>
+
+            <div class='blog-list__single'>
+                <div class='blog-list__image'>
+                    <img src='https://placehold.it/300x150'>
+                </div>
+
+                <div class='blog-list__content'>
+                    <h3>Title 2</h3>
+                    <p>Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. </p>
+                    <a class='blog-list__readmore' href='#'>Read more</a>
+                </div>
+            </div>
+
+            <div class='blog-list__single'>
+                <div class='blog-list__image'>
+                    <img src='https://placehold.it/300x150'>
+                </div>
+
+                <div class='blog-list__content'>
+                    <h3>Title 3</h3>
+                    <p>Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. </p>
+                    <a class='blog-list__readmore' href='#'>Read more</a>
+                </div>
+            </div>
+
+            <div class='blog-list__single'>
+                <div class='blog-list__image'>
+                    <img src='https://placehold.it/300x150'>
+                </div>
+
+                <div class='blog-list__content'>
+                    <h3>Title 4</h3>
+                    <p>Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. </p>
+                    <a class='blog-list__readmore' href='#'>Read more</a>
+                </div>
+            </div>
+
+            <div class='blog-list__single'>
+                <div class='blog-list__image'>
+                    <img src='https://placehold.it/300x150'>
+                </div>
+
+                <div class='blog-list__content'>
+                    <h3>Title 5</h3>
+                    <p>Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. </p>
+                    <a class='blog-list__readmore' href='#'>Read more</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
